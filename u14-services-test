@@ -12,8 +12,8 @@ services:
    - memcached
    - riak
    - elasticsearch
-    - couchdb
-    - cassandra 
+   - couchdb
+   - cassandra 
 
 
 build:
