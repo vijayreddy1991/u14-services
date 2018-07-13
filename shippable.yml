@@ -1,42 +1,15 @@
 language: none
 
 services:
-   - mysql
-   - selenium
-   - sqlite
    - postgres
-   - redis
-   - neo4j
-   - rabbitmq
-   - mongodb
-   - memcached
-   - riak
-   - elasticsearch
-   - couchdb
-   - cassandra 
-
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14all
-    image_tag: master
+    image_name: drydock/u16all
+    image_tag: v6.1.4
     pull: true
     
     
   ci:
-    - mysql --version
-    - java -jar /usr/local/selenium/selenium-server-standalone-3.13.0.jar --version
-    - sqlite3 --version
     - psql --version
-    - redis-server --version
-    - /var/lib/neo4j/bin/neo4j version
-    - dpkg -s rabbitmq-server | grep Version
-    - mongod --version
-    - memcached --version
-    - riak version
-    - elasticsearch --version
-    - sleep 5
-    - curl http://127.0.0.1:5984
-    - cassandra -v
-    - pip show pycrypto
     
