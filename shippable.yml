@@ -6,7 +6,7 @@ services:
    - sqlite
    - postgres
    - redis
-   - neo4j
+   - /var/lib/neo4j/bin/neo4j
    - rabbitmq
    - mongodb
    - memcached
