@@ -6,14 +6,13 @@ services:
    - sqlite
    - postgres
    - redis
-   - /var/lib/neo4j/bin/neo4j
+   - neo4j
    - rabbitmq
    - mongodb
    - memcached
    - riak
    - elasticsearch
    - couchdb
-   - cassandra 
 
 
 build:
