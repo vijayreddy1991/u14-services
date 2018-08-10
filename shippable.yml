@@ -20,7 +20,7 @@ build:
     image_name: drydock/u14all
     image_tag: master
     pull: true
-    options: "-v neo4j.sh:/usr/local/bin/shippable_services/neo4j.sh"
+    options: "-v $SHIPPABLE_BUILD_DIR/neo4j.sh:/usr/local/bin/shippable_services/neo4j.sh"
     
     
   ci:
