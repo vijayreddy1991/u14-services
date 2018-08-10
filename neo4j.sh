@@ -3,7 +3,7 @@
 source "$(dirname "$0")/neo4j_env.sh"
 
 # End service ENV variables
-
+printenv
 start_generic_service() {
   name=$1
   binary=$2
@@ -16,7 +16,7 @@ start_generic_service() {
     sleep 5
 
     ## check if the service port is reachable
-    while ! nc -vz localhost "$service_port" &>/dev/null; do
+    while ! nc -vz localhost "$service_port"; do
 
       ## check service process PID
       service_proc=$(pgrep -f "$binary" || echo "")
