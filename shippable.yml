@@ -17,15 +17,10 @@ services:
 
 build:
 
-  pre_ci:
-    - wget https://raw.githubusercontent.com/vijayreddy1991/u14-services/master/neo4j.sh
-    - echo "FROM drydock/u14all:master" > Dockerfile
-    - echo "ADD neo4j.sh /usr/local/bin/shippable_services/neo4j.sh" >> Dockerfile
-    - docker build -t=drydock/u14all:test -f Dockerfile .
   pre_ci_boot:
     image_name: drydock/u14all
     image_tag: test
-    pull: false
+    pull: true
     
     
   ci:
