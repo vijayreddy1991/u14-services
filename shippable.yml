@@ -6,7 +6,6 @@ services:
    - sqlite
    - postgres
    - redis
-   - neo4j
    - rabbitmq
    - mongodb
    - memcached
@@ -29,7 +28,6 @@ build:
     - sqlite3 --version
     - psql --version
     - redis-server --version
-    - /var/lib/neo4j/bin/neo4j version
     - dpkg -s rabbitmq-server | grep Version
     - mongod --version
     - memcached --version
