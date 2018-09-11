@@ -18,8 +18,8 @@ services:
 build:
 
   pre_ci_boot:
-    image_name: drydock/u14all
-    image_tag: master
+    image_name: drydock/u16all
+    image_tag: v5.5.1
     pull: true
     
     
