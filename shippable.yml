@@ -11,9 +11,8 @@ services:
    - riak
    - elasticsearch
    - couchdb
+   - neo4j
    
-
-
 
 build:
 
