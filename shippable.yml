@@ -34,7 +34,7 @@ build:
     - elasticsearch --version
     - sleep 5
     - curl http://127.0.0.1:5984
-    - $JAVA_HOME
+    - echo $JAVA_HOME
     - /var/lib/neo4j/bin/neo4j version
     - cassandra -v
     - pip show pycrypto
