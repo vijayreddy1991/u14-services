@@ -24,7 +24,6 @@ build:
     
   ci:
     - mysql --version
-    - java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
     - sqlite3 --version
     - psql --version
     - redis-server --version
