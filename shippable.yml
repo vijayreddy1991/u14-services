@@ -38,5 +38,4 @@ build:
     - /var/lib/neo4j/bin/neo4j version
     - cassandra -v
     - pip show pycrypto
-    - java -version
     
