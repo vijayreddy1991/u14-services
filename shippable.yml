@@ -11,9 +11,7 @@ services:
    - riak
    - elasticsearch
    - couchdb
-   - /var/log/cassandra/system.log
-   - cassandra
- 
+  
    
 
 build:
