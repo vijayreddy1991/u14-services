@@ -24,6 +24,7 @@ build:
     
   ci:
     - mysql --version
+    - printenv
     - sqlite3 --version
     - psql --version
     - redis-server --version
