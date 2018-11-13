@@ -31,7 +31,7 @@ build:
     
   ci:
     - mysql --version
-    - java --version
+    - java -version
     - printenv
     - sqlite3 --version
     - psql --version
