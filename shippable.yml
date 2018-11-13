@@ -17,15 +17,15 @@ services:
 
 build:
 
-  pre_ci:
-   - git clone https://github.com/vijayreddy1991/u14all.git
-   - cd u14all
-   - docker build -t drydock/u14alltest:latest .
+  #pre_ci:
+   #- git clone https://github.com/vijayreddy1991/u14all.git
+   #- cd u14all
+   #- docker build -t drydock/u14alltest:latest .
 
   pre_ci_boot:
-    image_name: drydock/u14alltest
-    image_tag: latest
-    pull: false
+    image_name: drydock/u14javall
+    image_tag: master
+    pull: true
     
     
   ci:
