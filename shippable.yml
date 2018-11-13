@@ -12,6 +12,7 @@ services:
    - elasticsearch
    - couchdb
    - neo4j
+   - cassandra
   
    
 
