@@ -1,16 +1,16 @@
 language: none
 
 services:
-   - mysql
-   - selenium
-   - postgres
-   - redis
-   - rabbitmq
-   - mongodb
-   - memcached
-   - riak
-   - elasticsearch
-   - couchdb
+   #- mysql
+   #- selenium
+   #- postgres
+   #- redis
+   #- rabbitmq
+   #- mongodb
+   #- memcached
+   #- riak
+   #- elasticsearch
+   #- couchdb
    - neo4j
    - cassandra
   
