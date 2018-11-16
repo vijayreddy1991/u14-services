@@ -24,7 +24,7 @@ build:
    #- docker build -t drydock/u14alltest:latest .
 
   pre_ci_boot:
-    image_name: drydock/u14javall
+    image_name: drydock/u14all
     image_tag: master
     pull: true
     
