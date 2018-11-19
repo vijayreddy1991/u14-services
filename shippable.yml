@@ -6,7 +6,12 @@ jdk:
 services:
    - neo4j
     
-build:
+
+build:	
+  pre_ci_boot:	
+    image_name: drydock/u14javall	
+    image_tag: v5.3.2	
+    pull: true
     
   ci:
     - mysql --version
