@@ -4,7 +4,7 @@ jdk:
   - openjdk8
 
 services:
-   - cassandra
+   - neo4j
     
 
 build:	
