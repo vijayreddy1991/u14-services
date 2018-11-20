@@ -1,7 +1,5 @@
-language: java
+language: none
 
-jdk:
-  - openjdk10
 
 services:
    - neo4j
