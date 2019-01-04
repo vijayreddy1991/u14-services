@@ -13,6 +13,7 @@ services:
    - riak
    - elasticsearch
    - couchdb
+   - selenium
     
 	
 build:
@@ -23,7 +24,7 @@ build:
     
   ci:
     - mysql --version
-    - java -jar /usr/local/selenium/selenium-server-standalone-3.141.5.jar --version
+    - java -jar /usr/local/selenium/selenium-server-standalone-3.141.59.jar --version
     - java -version
     - printenv
     - sqlite3 --version
