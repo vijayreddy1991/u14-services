@@ -14,7 +14,7 @@ services:
    - elasticsearch
    - couchdb
    - selenium
-   - neo4j
+   - cassandra
     
 	
 build:
