@@ -3,7 +3,7 @@ language: none
 
 services:
    - mysql
-   - sqlite
+  # - sqlite
    - postgres
    - redis
    #- neo4j
@@ -14,6 +14,7 @@ services:
    - elasticsearch
    - couchdb
    - selenium
+   - neo4j
     
 	
 build:
